@@ -1,0 +1,210 @@
+body{
+    background: url(https://falcon-eyes.ru/upload/iblock/8f6/8f667926e00feb79ed462cda767633af.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.weather h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: rgb(218, 215, 40);
+}
+.headerToDay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+.city{
+font-size: 30px;
+}
+.weather{
+    width: 50%;
+    height: 70vh;
+}
+.toDay{
+    height: 50vh;
+    border: 10px solid rgb(219, 179, 47);
+    border-radius: 10px;
+}
+.maxMinTemp img{
+    width: 30px;
+}
+.maxMinTemp{
+    font-size: 20px;
+    width: 27%;
+    display: flex;
+    justify-content: space-around;
+}
+.mainToDay{
+    display: flex;
+    justify-content: space-between;
+}
+.information{
+    width: 20%;
+    margin-left: 5%;
+}
+.icon{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.icon img{
+    margin-top: 10%;
+    width: 175px;
+    height: 150px;
+    margin-left: 25%;
+}
+.icon p{
+    margin-top: -5%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-around;
+}
+.temp{
+    width: 28%;
+    font-weight: 500;
+    font-size: 75px;
+    margin-top: -5%;
+    margin-right: 3%;
+}
+
+.week{
+    margin-top: 1%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daysOf{
+    border: 5px solid rgb(219, 179, 47);
+    border-radius: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: small;
+    width: 16%;   
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.daysOf img{
+    height: 60px;
+    width: 70px;
+}
+.daysOf2{
+    border: 5px solid rgb(219, 179, 47);
+    border-radius: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: small;
+    width: 16%;   
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.daysOf2 img{
+    height: 60px;
+    width: 70px;
+}
+
+
+@media (max-width: 575.98px){ 
+   
+    .toDay{
+        position: relative;
+        width: 575px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* // Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей) */
+@media (max-width: 767.98px) { 
+    .main{
+        position: relative;
+        margin: 0 auto auto auto;
+    }
+   
+    .weather{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: -webkit-fill-available;
+        font-size: small;
+    }
+   
+    .toDay{
+        width: 95%;
+    }
+    .toDay .maxMinTemp{
+        font-size: 20px;
+        display: contents;
+    }
+    .mainToDay{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .mainToDay .icon{
+        width: 51%;
+        display: flex;
+        align-items: center;
+    }
+    .icon p{
+        font-size: large;
+        margin-right: -30%;
+    }
+    .temp {
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .information{
+        margin-left: 1%;
+    }
+    .week{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2vw;
+    }
+    .daysOf{
+        font-size: xx-small;
+        width: 80px;
+        font-weight: 800;
+    }
+    .daysOf2{
+        font-weight: 800;
+        width: 80px;
+        font-size: xx-small;
+    }
+    .daysOf .daysOf2 img{
+        width: 30px;
+        height: 30px;
+    }
+ }
+
+
+/* // Устройства Medium (планшеты, менее 992 пикселей) */
+@media (max-width: 991.98px) {  }
+
+/* // Устройства Large (настольные компьютеры, менее 1200 пикселей) */
+@media (max-width: 1199.98px) {  }
+
+/* // Устройства X-Large (большие настольные компьютеры, менее 1400 пикселей) */
+@media (max-width: 1399.98px) {  }
+
+/* // Устройства XX-Large (большие настольные компьютеры)
+// Нет медиа-запроса, так как контрольная точка xxl не имеет верхней границы ширины */
